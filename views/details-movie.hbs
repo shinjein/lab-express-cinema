@@ -1,0 +1,14 @@
+<h1> {{movieInfo.title}} </h1>
+<hr>
+    <img src="{{movieInfo.image}}" alt="">
+    <h3>
+        {{movieInfo.director}}
+    </h3>
+    {{#each movieInfo}}
+            {{stars}}    
+
+    {{/each}}
+    <h4>
+        {{movieInfo.description}}
+    </h4>
+    <a href="/movies">Back to list</a>
